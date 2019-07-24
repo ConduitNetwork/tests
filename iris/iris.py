@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# In[8]:  
+# In[8]:
 
 def say_hello(recipient):
     return 'Hello, {}!'.format(recipient)
@@ -29,12 +29,12 @@ print('pandas: {}'.format(pandas.__version__))
 import sklearn
 print('sklearn: {}'.format(sklearn.__version__))
 
-
 # In[12]:
 
 
 # Load libraries
 import pandas
+import time
 from pandas.plotting import scatter_matrix
 import matplotlib.pyplot as plt
 from sklearn import model_selection
@@ -50,6 +50,8 @@ from sklearn.svm import SVC
 
 
 # In[13]:
+
+start = time.time()
 
 
 # Load dataset
@@ -170,3 +172,6 @@ print(classification_report(Y_validation, predictions))
 
 
 # In[ ]:
+
+end = time.time()
+print('Train time:', end - start, 'sec')
