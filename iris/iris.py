@@ -34,7 +34,6 @@ print('sklearn: {}'.format(sklearn.__version__))
 
 # Load libraries
 import pandas
-import time
 from pandas.plotting import scatter_matrix
 import matplotlib.pyplot as plt
 from sklearn import model_selection
@@ -47,7 +46,7 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 from sklearn.naive_bayes import GaussianNB
 from sklearn.svm import SVC
-
+import time
 
 # In[13]:
 
